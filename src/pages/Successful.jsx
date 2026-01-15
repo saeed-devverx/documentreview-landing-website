@@ -27,8 +27,8 @@ const Successful = () => {
         }
 
         // Call verification API
-        const response = await fetch(`https://drl-admin.devverx.us/stripe/verify-session-payment/${sessionId}`, {
-          method: "POST",
+        const response = await fetch(`${window.location.origin}/stripe/verify-session-payment/${sessionId}`, {
+          method: "GET",
           headers: {
             "Authorization": `Bearer ${token}`,
             "Content-Type": "application/json",
