@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import thumbnail from "../../assets/thumbnail.png";
 import playIcon from "../../assets/play.svg";
-import VideoPopup from "../VideoPopup";
+// import VideoPopup from "../VideoPopup";
 import video from "../../assets/video.mp4";
+import VideoPopup from "../Videopopup"
 
 const Video = () => {
   const [isOpen, setIsOpen] = useState(false);

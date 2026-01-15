@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-const VideoPopup = ({ videoSrc, isOpen, onClose }) => {
+const VideoPopup =({ videoSrc, isOpen, onClose }) => {
   if (!isOpen) return null; // Don't render if modal is closed
 
   return (
@@ -29,4 +29,4 @@ const VideoPopup = ({ videoSrc, isOpen, onClose }) => {
   );
 };
 
-export default VideoPopup;
+export default VideoPopup
