@@ -27,13 +27,12 @@ const Successful = () => {
         }
 
         // Call verification API
-        const response = await fetch("https://drl-admin.devverx.us/stripe/verify-session-payment/", {
+        const response = await fetch(`https://drl-admin.devverx.us/stripe/verify-session-payment/${sessionId}`, {
           method: "POST",
           headers: {
             "Authorization": `Bearer ${token}`,
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ session_id: sessionId })
         });
 
         if (!response.ok) {
