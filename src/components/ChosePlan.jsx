@@ -160,7 +160,7 @@ const ChosePlan = () => {
       const requestBody = {
         user_id: userId,
         plan_id: plan.id,
-        success_url: "https://drl-frontend.devverx.us/successful", // or your specific success URL
+success_url: `${window.location.origin}/successful`,
         cancel_url: "https://drl-frontend.devverx.us/" // or your specific cancel URL
       };
 
