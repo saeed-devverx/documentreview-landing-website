@@ -20,7 +20,7 @@ const Video = () => {
           {/* Thumbnail Image */}
           <div className="relative lg:w-[1300px] max-w-5xl">
             <img
-              src={thumbnail}
+              src={"https://res.cloudinary.com/dk0z4ums3/image/upload/v1696224863/thumbnail_ozv8tp.png"}
               alt="Video Thumbnail"
               className="w-full rounded-xl sm:rounded-2xl shadow-lg border-2 border-blue-800 hover:border-green-400 transition-colors duration-300 hover:opacity-90 cursor-pointer"
               onClick={() => setIsOpen(true)}
