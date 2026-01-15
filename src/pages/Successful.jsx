@@ -56,7 +56,13 @@ const Successful = () => {
           localStorage.setItem("payment_status", responseData.status);
           
           // Show success popup for 3 seconds then navigate
-         
+          setTimeout(() => {
+            // Clear session ID as it's no longer needed
+            localStorage.removeItem("stripe_session_id");
+            
+            // Navigate to the external URL
+            window.location.href = "https://docreviewer.devverx.us/";
+          }, 3000);
           
         } else {
           // Response doesn't match expected structure
